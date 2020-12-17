@@ -11,6 +11,7 @@ jobs:
       - image: cimg/base:2020.01
 
     steps:
+      - checkout
       - add_ssh_keys:
           fingerprints:
             - "84:a9:8b:d6:e9:68:1b:78:80:e0:4e:22:a3:0a:30:00"
@@ -30,8 +31,8 @@ jobs:
       - run:
           name: "Create my playbook"
           command: |
-            pwd
-            #ansible-playbook ./.circleci/main-remote.yml -i inventory --private-key myKP4.pem
+            echo "Nooooooooooooooooooo: "; pwd
+            ansible-playbook ./.circleci/main-remote.yml -i inventory --private-key myKP4.pem
       
 workflows:
   myworkflow:
