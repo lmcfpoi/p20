@@ -30,7 +30,7 @@ jobs:
       - run:
           name: "Create my playbook"
           command: |
-            ansible-playbook ../main-remote.yml -i inventory --private-key myKP4.pem
+            ansible-playbook main-remote.yml -i inventory --private-key myKP4.pem
       
 workflows:
   myworkflow:
