@@ -5,7 +5,8 @@ jobs:
   configure:
     docker:
       # - image: python:3.7-alpine3.11
-      - image: circleci/redis
+      # - image: circleci/redis
+      - image: ubuntu-2004:202008-01
     steps:
       - add_ssh_keys:
           fingerprints:
