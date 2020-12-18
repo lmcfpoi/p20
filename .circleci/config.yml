@@ -7,7 +7,7 @@ jobs:
       # - image: python:3.7-alpine3.11
       # - image: circleci/redis
       # - image: ubuntu-2004:202008-01
-      # - image: python:3.7-alpine3.11
+      # - image: python:3.7-alpine3.11xxxx
       - image: cimg/base:2020.01
 
     steps:
